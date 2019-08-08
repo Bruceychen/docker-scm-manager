@@ -23,3 +23,54 @@ services:
      - TZ=Asia/Taipei
    ports:
      - "8181:8080"
+ svn_TDD51:
+   container_name: svn_TDD51
+   restart: always
+   image: tomcat:8.5.41-jre8
+   volumes:
+     - /mnt/sdb/svn/config/svn_TDD51:/var/lib/scm
+   environment:
+     - TZ=Asia/Taipei
+   ports:
+     - "8182:8080"
+ svn_TDD53:
+   container_name: svn_TDD53
+   restart: always
+   image: tomcat:8.5.41-jre8
+   volumes:
+     - /mnt/sdb/svn/config/svn_TDD53:/var/lib/scm
+   environment:
+     - TZ=Asia/Taipei
+   ports:
+     - "8183:8080"
+ svn_TDD54:
+   container_name: svn_TDD54
+   restart: always
+   image: tomcat:8.5.41-jre8
+   volumes:
+     - /mnt/sdb/svn/config/svn_TDD54:/var/lib/scm
+   environment:
+     - TZ=Asia/Taipei
+   ports:
+     - "8184:8080"
+ svn_PS152:
+   container_name: svn_PS152
+   restart: always
+   image: tomcat:8.5.41-jre8
+   volumes:
+     - /mnt/sdb/svn/config/svn_PS152:/var/lib/scm
+   environment:
+     - TZ=Asia/Taipei
+   ports:
+     - "8185:8080"
+ svn_TDD19_TEST:
+   container_name: svn_TDD19_TEST
+   restart: always
+   image: tomcat:8.5.41-jre8
+   volumes:
+     - /mnt/sdb/svn/config/svn_TDD19_TEST:/var/lib/scm
+   environment:
+     - TZ=Asia/Taipei
+   ports:
+     - "8188:8080"
+

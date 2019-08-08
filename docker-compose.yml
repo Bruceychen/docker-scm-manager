@@ -28,3 +28,63 @@ services:
      - TZ=Asia/Taipei
    ports:
      - "8181:8080"
+ svn_TDD51:
+   container_name: svn_TDD51
+   restart: always
+   image: sdorra/scm-manager:1.60
+   volumes:
+     - /mnt/sdb/svn/config/svn_TDD51:/var/lib/scm
+     - $PWD/server-config-TDD51.xml:/opt/scm-server/conf/server-config.xml:z
+     - $PWD/logs/TDD51:/var/lib/scm/logs:z
+   environment:
+     - TZ=Asia/Taipei
+   ports:
+     - "8182:8080"
+ svn_TDD53:
+   container_name: svn_TDD53
+   restart: always
+   image: sdorra/scm-manager:1.60
+   volumes:
+     - /mnt/sdb/svn/config/svn_TDD53:/var/lib/scm
+     - $PWD/server-config-TDD53.xml:/opt/scm-server/conf/server-config.xml:z
+     - $PWD/logs/TDD53:/var/lib/scm/logs:z
+   environment:
+     - TZ=Asia/Taipei
+   ports:
+     - "8183:8080"
+ svn_TDD54:
+   container_name: svn_TDD54
+   restart: always
+   image: sdorra/scm-manager:1.60
+   volumes:
+     - /mnt/sdb/svn/config/svn_TDD54:/var/lib/scm
+     - $PWD/server-config-TDD54.xml:/opt/scm-server/conf/server-config.xml:z
+     - $PWD/logs/TDD54:/var/lib/scm/logs:z
+   environment:
+     - TZ=Asia/Taipei
+   ports:
+     - "8184:8080"
+ svn_PS152:
+   container_name: svn_PS152
+   restart: always
+   image: sdorra/scm-manager:1.60
+   volumes:
+     - /mnt/sdb/svn/config/svn_PS152:/var/lib/scm
+     - $PWD/server-config-PS152.xml:/opt/scm-server/conf/server-config.xml:z
+     - $PWD/logs/PS152:/var/lib/scm/logs:z
+   environment:
+     - TZ=Asia/Taipei
+   ports:
+     - "8185:8080"
+ svn_TDD19_TEST:
+   container_name: svn_TDD19_TEST
+   restart: always
+   image: sdorra/scm-manager:1.60
+   volumes:
+     - /mnt/sdb/svn/config/svn_TDD19_TEST:/var/lib/scm
+     - $PWD/server-config-TDD19_TEST.xml:/opt/scm-server/conf/server-config.xml:z
+     - $PWD/logs/TDD19_TEST:/var/lib/scm/logs:z
+   environment:
+     - TZ=Asia/Taipei
+   ports:
+     - "8188:8080"
